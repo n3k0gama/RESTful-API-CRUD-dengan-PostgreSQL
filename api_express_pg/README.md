@@ -7,7 +7,27 @@ This project is a RESTful API built with Express.js and PostgreSQL. It provides 
 - PostgreSQL database integration
 - Organized code structure (controllers, models, routes, config)
 
+
 ## Getting Started
+
+### Database Setup
+
+Before running the application, create the PostgreSQL database and table:
+
+1. Open your PostgreSQL client (e.g., psql).
+2. Run the following commands:
+   ```sql
+   CREATE DATABASE kampus;
+   \c kampus
+
+   CREATE TABLE students (
+     id SERIAL PRIMARY KEY,
+     name VARCHAR(100) NOT NULL,
+     major VARCHAR(50),
+     age INT
+   );
+   ```
+
 
 ### Prerequisites
 - Node.js (v14 or higher recommended)
